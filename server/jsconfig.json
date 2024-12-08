@@ -1,0 +1,11 @@
+{
+    "compilerOptions": {
+        "baseUrl": "./",  // Base directory
+        "paths": {
+            "@/*": ["src/*"]  // Define alias @ to src
+        }
+    },
+    "include": [
+        "src/**/*"
+    ]
+}
