@@ -8,10 +8,12 @@ const connectDb = require("@/config/connectDb");
 const PORT = 3000;
 
 const authRoutes = require("@/routes/authRoutes");
+const userRoutes = require("@/routes/userRoutes");
 
 app.use(express.json());
 
 app.use("/auth", authRoutes);
+app.use("/user", userRoutes);
 
 //DEFAULT ROUTE
 app.use((req, res, next) => {
